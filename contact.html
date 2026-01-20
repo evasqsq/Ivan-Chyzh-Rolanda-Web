@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Cristiano Ronaldo projekt</title>
+    <meta name="description" content="Kontaktujte autora študentského webu o kariére Cristiana Ronalda.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top-navigation">
+        <div class="nav-logo">
+            <span class="cr7-logo">CR7</span>
+            <span class="site-name">Cristiano Ronaldo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="career.html">Klubová kariéra</a></li>
+            <li><a href="skills.html">Schopnosti</a></li>
+            <li><a href="records.html">Rekordy</a></li>
+            <li><a href="contact.html" class="active">Kontakt</a></li>
+            <li><a href="ulohy.html">Ulohy</a></li>
+        </ul>
+    </nav>
+
+
+    <header class="page-hero">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Napíš svoje otázky alebo čo ťa na Ronaldovi najviac inšpiruje.</p>
+        </div>
+    </header>
+
+
+    <main class="contact-main">
+        <div class="container">
+
+            <section class="contact-layout">
+
+                <div class="contact-info-card">
+                    <h2>O projekte</h2>
+                    <p>
+                        Tento web je študentský projekt, ktorý mapuje kariéru Cristiana Ronalda – jeho kluby,
+                        schopnosti a rekordy.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <h4>E‑mail</h4>
+                                <p>cr7projekt@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-info">
+                                <h4>Mesto</h4>
+                                <p>Bratislava, Slovensko</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="fun-fact">
+                        Fun fact: Ronaldo debutoval v reprezentácii Portugalska v roku 2003 ako 18‑ročný. [web:57]
+                    </p>
+                </div>
+
+
+                <div class="contact-form-side">
+                    <div class="form-header">
+                        <h2>Napíš správu</h2>
+                        <p>Vyplň formulár a pošli svoj názor na jeho kariéru alebo otázky k projektu.</p>
+                    </div>
+
+                    <form action="process.php" method="post" class="contact-form">
+
+                        <div class="form-section">
+                            <h3 class="section-title">Tvoje údaje</h3>
+
+                            <div class="form-row-two">
+                                <div class="form-group">
+                                    <label for="meno">Meno <span class="required">*</span></label>
+                                    <input type="text" id="meno" name="meno" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E‑mail <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="krajina">Krajina</label>
+                                <input type="text" id="krajina" name="krajina" placeholder="napr. Slovensko">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="section-title">O čom chceš písať?</h3>
+
+                            <div class="form-group">
+                                <label for="tema">Téma správy <span class="required">*</span></label>
+                                <select id="tema" name="tema" required>
+                                    <option value="">– vyber tému –</option>
+                                    <option value="career">Otázka ku klubovej kariére</option>
+                                    <option value="skills">Otázka k schopnostiam / tréningu</option>
+                                    <option value="records">Otázka k rekordom</option>
+                                    <option value="general">Iné / všeobecná spätná väzba</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sprava">Správa <span class="required">*</span></label>
+                                <textarea id="sprava" name="sprava" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="section-title">Preferencie</h3>
+
+                            <div class="form-group-checkbox">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">
+                                    Chcem dostávať novinky o aktualizáciách projektu.
+                                    <span class="checkbox-desc">(max. pár e‑mailov do roka)</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group-checkbox">
+                                <input type="checkbox" id="souhlas" name="souhlas" required>
+                                <label for="souhlas">
+                                    Súhlasím so spracovaním údajov pre účely odpovede na moju správu. <span class="required">*</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Odoslať správu</button>
+                            <button type="reset" class="btn-reset">Vymazať formulár</button>
+                        </div>
+
+                        <p class="form-note">
+                            Polia označené <span class="required">*</span> sú povinné.
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-text">© 2026 CR7 History Project – Kontakt.</p>
+        </div>
+    </footer>
+</body>
+</html>
